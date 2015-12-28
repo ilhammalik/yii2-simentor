@@ -69,7 +69,7 @@ class UserController extends Controller
                     $model->save();
                 }
             }
-         return $this->redirect(['view', 'id' => $model->kehadiran_id]);
+         return $this->redirect(['/kehadiran', 'id' => $model->kehadiran_id]);
         } else {
             return $this->render('view', [
                 'model' => $model,
