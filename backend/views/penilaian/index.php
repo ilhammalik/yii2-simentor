@@ -25,8 +25,11 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
+<<<<<<< HEAD
             'penilaian_id',
             'user_id',
+=======
+>>>>>>> origin/prod
             'anggota.nim',
           
             'anggota.full_name',

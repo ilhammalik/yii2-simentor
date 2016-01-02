@@ -9,6 +9,10 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use common\widgets\Alert;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/prod
 AppAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -53,6 +57,7 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
+<<<<<<< HEAD
     <div class="row">
         <div class="col-md-2">
         <?php
@@ -83,14 +88,19 @@ AppAsset::register($this);
         ?>
         </div>
         <div class="col-md-10">
+=======
+>>>>>>> origin/prod
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+<<<<<<< HEAD
         </div>
     </div>
         
+=======
+>>>>>>> origin/prod
     </div>
 </div>
 

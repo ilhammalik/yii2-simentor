@@ -7,7 +7,11 @@ use yii\grid\GridView;
 /* @var $searchModel common\models\UserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
+<<<<<<< HEAD
 $this->title = 'Daftar Mentor';
+=======
+$this->title = 'Users';
+>>>>>>> origin/prod
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="user-index">
@@ -25,12 +29,29 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
+<<<<<<< HEAD
             'username',
              'nim',
             'prodi',
             'telepon',
            
             'email:email',
+=======
+            'id',
+            'username',
+            'auth_key',
+            'password_hash',
+            'password_reset_token',
+            // 'email:email',
+            // 'status',
+            // 'created_at',
+            // 'updated_at',
+            // 'nim',
+            // 'prodi',
+            // 'telepon',
+            // 'status_pengguna',
+            // 'full_name',
+>>>>>>> origin/prod
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

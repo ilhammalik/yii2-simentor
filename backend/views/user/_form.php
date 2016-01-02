@@ -11,6 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="user-form">
 
     <?php $form = ActiveForm::begin(); ?>
+<<<<<<< HEAD
     <div class="row">
         <div class="col-md-6">
             <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
@@ -30,6 +31,34 @@ use yii\widgets\ActiveForm;
     
 
 
+=======
+
+    <?= $form->field($model, 'username')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'auth_key')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'password_hash')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'password_reset_token')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'status')->textInput() ?>
+
+    <?= $form->field($model, 'created_at')->textInput() ?>
+
+    <?= $form->field($model, 'updated_at')->textInput() ?>
+
+    <?= $form->field($model, 'nim')->textInput() ?>
+
+    <?= $form->field($model, 'prodi')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'telepon')->textInput() ?>
+
+    <?= $form->field($model, 'status_pengguna')->textInput() ?>
+
+    <?= $form->field($model, 'full_name')->textInput(['maxlength' => true]) ?>
+>>>>>>> origin/prod
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
