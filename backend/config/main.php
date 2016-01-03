@@ -12,7 +12,6 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-<<<<<<< HEAD
     'homeUrl' => '/simentor',
     'components' => [
         'urlManager' => [
@@ -22,9 +21,7 @@ return [
          'request' => [
             'baseUrl' => '/simentor',
         ],
-=======
     'components' => [
->>>>>>> origin/prod
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
