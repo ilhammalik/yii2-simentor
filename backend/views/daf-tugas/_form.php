@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'url')->textInput(['rows' => 6]) ?>
     
 	<?= $form->field($model, 'tgl_max')->widget(\yii\jui\DatePicker::classname(), [
-	    //'language' => 'ru',
+	    'language' => 'id',
 	    'dateFormat' => 'yyyy-MM-dd',
 	]) ?>
     <?php echo $form->field($model, 'status')->dropDownList(['1' => 'Tugas ', '2' => 'Kuisoner']); ?>

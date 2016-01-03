@@ -5,7 +5,7 @@
              
                <span class="glyphicon glyphicon-ok"></span> <strong><?= $model->desc ?></strong>
                 <hr class="message-inner-separator">
-                <p>Deadline Pengerjaan:</p>
+                <p>Deadline Pengerjaan: <?= $model->tgl_max ?></p>
                 <p><a class="btn icon-btn btn-success" href="<?= $model->url ?>">Links</a></p>
             </div>
 

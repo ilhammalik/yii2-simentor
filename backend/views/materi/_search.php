@@ -4,24 +4,30 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\DafTugasSearch */
+/* @var $model common\models\MateriSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="daf-tugas-search">
+<div class="materi-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'id_tugas') ?>
+    <?= $form->field($model, 'id_materi') ?>
 
-    <?= $form->field($model, 'desc') ?>
+    <?= $form->field($model, 'judul') ?>
 
-    <?= $form->field($model, 'url') ?>
+    <?= $form->field($model, 'links') ?>
 
-    <?= $form->field($model, 'status') ?>
+    <?= $form->field($model, 'file') ?>
+
+    <?= $form->field($model, 'tgl_input') ?>
+
+    <?php // echo $form->field($model, 'user_id') ?>
+
+    <?php // echo $form->field($model, 'status') ?>
 
     <div class="form-group">
         <?= Html::submitButton(Yii::t('app', 'Search'), ['class' => 'btn btn-primary']) ?>

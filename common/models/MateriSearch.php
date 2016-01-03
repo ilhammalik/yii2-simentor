@@ -5,12 +5,12 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\DafTugas;
+use common\models\Materi;
 
 /**
- * DafTugasSearch represents the model behind the search form about `\common\models\DafTugas`.
+ * MateriSearch represents the model behind the search form about `common\models\Materi`.
  */
-class DafTugasSearch extends DafTugas
+class MateriSearch extends Materi
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class DafTugasSearch extends DafTugas
     public function rules()
     {
         return [
-            [['id_tugas', 'status'], 'integer'],
-            [['desc', 'url'], 'safe'],
+            [['id_materi', 'user_id', 'status'], 'integer'],
+            [['judul', 'links',  'tgl_input'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class DafTugasSearch extends DafTugas
      */
     public function search($params)
     {
-        $query = DafTugas::find();
+        $query = Materi::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -56,12 +56,14 @@ class DafTugasSearch extends DafTugas
         }
 
         $query->andFilterWhere([
-            'id_tugas' => $this->id_tugas,
+            'id_materi' => $this->id_materi,
+            'user_id' => $this->user_id,
             'status' => $this->status,
         ]);
 
-        $query->andFilterWhere(['like', 'desc', $this->desc])
-            ->andFilterWhere(['like', 'url', $this->url]);
+        $query->andFilterWhere(['like', 'judul', $this->judul])
+            ->andFilterWhere(['like', 'links', $this->links])
+            ->andFilterWhere(['like', 'tgl_input', $this->tgl_input]);
 
         return $dataProvider;
     }

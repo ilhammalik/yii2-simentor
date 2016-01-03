@@ -120,7 +120,7 @@ class UserController extends Controller
                     <h5 align="center">Developer By Hendra Aditya Wijaya Mentor Ilham Malik Ibrahim' . date('Y') . '</h5><br/>';
                     Yii::$app->mailer->compose("@common/mail/layouts/html", ["content" => $content])
                             ->setTo($_POST['User']['email'])
-                            ->setFrom([$_POST['User']['email'] => 'Aplikasi Simpel Bapeten'])
+                            ->setFrom([$_POST['User']['email'] => 'Aplikasi Simentor STT NF'])
                             ->setSubject('Ubah Kata Sandi')
                             ->setTextBody($_POST['User']['password'])
                             ->send();

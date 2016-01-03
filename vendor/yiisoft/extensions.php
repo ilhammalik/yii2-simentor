@@ -84,4 +84,40 @@ return array (
       '@kartik/select2' => $vendorDir . '/kartik-v/yii2-widget-select2',
     ),
   ),
+  'kartik-v/yii2-widget-sidenav' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-sidenav',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@kartik/sidenav' => $vendorDir . '/kartik-v/yii2-widget-sidenav',
+    ),
+  ),
+  'wbraganca/yii2-dynamicform' => 
+  array (
+    'name' => 'wbraganca/yii2-dynamicform',
+    'version' => '2.0.2.0',
+    'alias' => 
+    array (
+      '@wbraganca/dynamicform' => $vendorDir . '/wbraganca/yii2-dynamicform',
+    ),
+  ),
+  'kartik-v/yii2-widget-fileinput' => 
+  array (
+    'name' => 'kartik-v/yii2-widget-fileinput',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@kartik/file' => $vendorDir . '/kartik-v/yii2-widget-fileinput',
+    ),
+  ),
+  'fedemotta/yii2-widget-datatables' => 
+  array (
+    'name' => 'fedemotta/yii2-widget-datatables',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@fedemotta/datatables' => $vendorDir . '/fedemotta/yii2-widget-datatables',
+    ),
+  ),
 );

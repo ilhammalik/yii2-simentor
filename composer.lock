@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "95f7c6736759e53252f9fafb23bc7442",
+    "hash": "9d9582faa78ce39db082fc35771b2652",
+    "content-hash": "c250a3509e112dd765fd58891faaf2a8",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -54,6 +55,96 @@
                 "responsive",
                 "web"
             ]
+        },
+        {
+            "name": "bower-asset/datatables",
+            "version": "1.10.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataTables/DataTables.git",
+                "reference": "e2456455445801ec6bcd2467247fa2e030ab8b4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataTables/DataTables/zipball/e2456455445801ec6bcd2467247fa2e030ab8b4a",
+                "reference": "e2456455445801ec6bcd2467247fa2e030ab8b4a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "media/js/jquery.dataTables.js",
+                    "media/css/jquery.dataTables.css",
+                    "media/images/sort_asc.png",
+                    "media/images/sort_asc_disabled.png",
+                    "media/images/sort_both.png",
+                    "media/images/sort_desc.png",
+                    "media/images/sort_desc_disabled.png"
+                ],
+                "bower-asset-ignore": [
+                    "/.*",
+                    "examples",
+                    "media/unit_testing",
+                    "composer.json",
+                    "dataTables.jquery.json",
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "datatables",
+                "javascript",
+                "jquery",
+                "library",
+                "table"
+            ]
+        },
+        {
+            "name": "bower-asset/datatables-bootstrap3",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jowin/Datatables-Bootstrap3.git",
+                "reference": "06d78a732dfd1da928ff118dd26249ae94021495"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jowin/Datatables-Bootstrap3/zipball/06d78a732dfd1da928ff118dd26249ae94021495",
+                "reference": "06d78a732dfd1da928ff118dd26249ae94021495",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
+        },
+        {
+            "name": "bower-asset/datatables-tabletools",
+            "version": "2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataTables/TableTools.git",
+                "reference": "5fc9d457b673fe3f2d84f32660ee74e29ce6f84e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataTables/TableTools/zipball/5fc9d457b673fe3f2d84f32660ee74e29ce6f84e",
+                "reference": "5fc9d457b673fe3f2d84f32660ee74e29ce6f84e",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/datatables": ">=1.9.0",
+                "bower-asset/jquery": ">=1.7.0"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "js/dataTables.tableTools.js",
+                    "css/dataTables.tableTools.css"
+                ]
+            }
         },
         {
             "name": "bower-asset/jquery",
@@ -342,6 +433,108 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "fedemotta/yii2-widget-datatables",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fedemotta/yii2-widget-datatables.git",
+                "reference": "f867d54f671ce43b388d4e0a736e30b67f5c11d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fedemotta/yii2-widget-datatables/zipball/f867d54f671ce43b388d4e0a736e30b67f5c11d8",
+                "reference": "f867d54f671ce43b388d4e0a736e30b67f5c11d8",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/datatables": ">= 1.9.4",
+                "bower-asset/datatables-bootstrap3": "*",
+                "bower-asset/datatables-tabletools": "*",
+                "bower-asset/jquery": ">= 1.7.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "fedemotta\\datatables\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Federico Nicolás Motta",
+                    "email": "fedemotta@gmail.com"
+                }
+            ],
+            "description": "DataTables widget for Yii2",
+            "keywords": [
+                "datatables",
+                "extension",
+                "javascript",
+                "jquery",
+                "library",
+                "table",
+                "yii2"
+            ],
+            "time": "2015-08-15 15:42:37"
+        },
+        {
+            "name": "kartik-v/bootstrap-fileinput",
+            "version": "v4.2.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+                "reference": "6ba4295298ee3abe26171b4e2078c27a2f3b35b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/6ba4295298ee3abe26171b4e2078c27a2f3b35b0",
+                "reference": "6ba4295298ee3abe26171b4e2078c27a2f3b35b0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\fileinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "keywords": [
+                "ajax",
+                "bootstrap",
+                "delete",
+                "file",
+                "image",
+                "input",
+                "jquery",
+                "multiple",
+                "preview",
+                "progress",
+                "upload"
+            ],
+            "time": "2015-11-18 17:56:04"
+        },
+        {
             "name": "kartik-v/yii2-krajee-base",
             "version": "v1.7.9",
             "source": {
@@ -388,6 +581,56 @@
             "time": "2015-11-25 07:03:35"
         },
         {
+            "name": "kartik-v/yii2-widget-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
+                "reference": "084447f095888ddb09a95a1a363842ca87e01c9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/084447f095888ddb09a95a1a363842ca87e01c9d",
+                "reference": "084447f095888ddb09a95a1a363842ca87e01c9d",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-fileinput": "~4.2",
+                "kartik-v/yii2-krajee-base": "~1.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\file\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced FileInput widget for Bootstrap 3.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-fileinput",
+            "keywords": [
+                "extension",
+                "file",
+                "form",
+                "input",
+                "jquery",
+                "plugin",
+                "upload",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-08-17 13:03:50"
+        },
+        {
             "name": "kartik-v/yii2-widget-select2",
             "version": "dev-master",
             "source": {
@@ -397,7 +640,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/fa0175d936012eac3f7a382792cbb13948015c4e",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f8475c5b895726e082a1614993c1aff64f77e367",
                 "reference": "fa0175d936012eac3f7a382792cbb13948015c4e",
                 "shasum": ""
             },
@@ -434,6 +677,55 @@
                 "yii2"
             ],
             "time": "2015-09-22 03:10:57"
+        },
+        {
+            "name": "kartik-v/yii2-widget-sidenav",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-sidenav.git",
+                "reference": "02ee4f142d7dfbb316f878e538cc7b946f4502d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-sidenav/zipball/02ee4f142d7dfbb316f878e538cc7b946f4502d2",
+                "reference": "02ee4f142d7dfbb316f878e538cc7b946f4502d2",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\sidenav\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced side navigation menu styled for bootstrap (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-sidenav",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "jquery",
+                "menu",
+                "navigation",
+                "plugin",
+                "sidenav",
+                "widget",
+                "yii2"
+            ],
+            "time": "2014-11-09 08:07:23"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -487,6 +779,220 @@
                 "mailer"
             ],
             "time": "2015-06-06 14:19:39"
+        },
+        {
+            "name": "symfony/css-selector",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "4613311fd46e146f506403ce2f8a0c71d402d2a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/4613311fd46e146f506403ce2f8a0c71d402d2a3",
+                "reference": "4613311fd46e146f506403ce2f8a0c71d402d2a3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\CssSelector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-François Simon",
+                    "email": "jeanfrancois.simon@sensiolabs.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony CssSelector Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-12-05 17:45:07"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d",
+                "reference": "7c622b0c9fb8bdb146d6dfa86c5f91dcbfdbc11d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "symfony/css-selector": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DomCrawler Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-12-26 13:42:31"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2015-11-20 09:19:13"
+        },
+        {
+            "name": "wbraganca/yii2-dynamicform",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wbraganca/yii2-dynamicform.git",
+                "reference": "9b761d708aa6c06c1219e1c2ed321f7cb205b09f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wbraganca/yii2-dynamicform/zipball/9b761d708aa6c06c1219e1c2ed321f7cb205b09f",
+                "reference": "9b761d708aa6c06c1219e1c2ed321f7cb205b09f",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/css-selector": "*",
+                "symfony/dom-crawler": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "wbraganca\\dynamicform\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Wanderson Bragança",
+                    "email": "wanderson.wbc@gmail.com"
+                }
+            ],
+            "description": "It is widget to yii2 framework to clone form elements in a nested manner, maintaining accessibility.",
+            "keywords": [
+                "copy DOM element",
+                "extension",
+                "widget",
+                "yii2",
+                "yii2 dynamic form",
+                "yii2-dynamicform"
+            ],
+            "time": "2015-02-25 15:31:24"
         },
         {
             "name": "yiisoft/yii2",
@@ -1084,7 +1590,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "kartik-v/yii2-widget-select2": 20
+        "kartik-v/yii2-widget-select2": 20,
+        "kartik-v/yii2-widget-fileinput": 20,
+        "fedemotta/yii2-widget-datatables": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

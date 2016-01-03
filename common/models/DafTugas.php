@@ -29,7 +29,7 @@ class DafTugas extends \yii\db\ActiveRecord
     {
         return [
             [['desc', 'url', 'status'], 'required'],
-            [['desc', 'url'], 'string'],
+            [['desc','tgl_max', 'url'], 'string'],
             [['status'], 'integer']
         ];
     }
