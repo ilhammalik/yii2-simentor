@@ -62,6 +62,7 @@ class UserSearch extends User
             'updated_at' => $this->updated_at,
             'nim' => $this->nim,
             'telepon' => $this->telepon,
+<<<<<<< HEAD
             'status_pengguna' => 1,
         ]);
 
@@ -100,6 +101,9 @@ class UserSearch extends User
             'nim' => $this->nim,
             'telepon' => $this->telepon,
             'status_pengguna' => 2,
+=======
+            'status_pengguna' => $this->status_pengguna,
+>>>>>>> origin/prod
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])

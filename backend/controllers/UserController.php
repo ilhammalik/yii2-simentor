@@ -33,10 +33,13 @@ class UserController extends Controller
      */
     public function actionIndex()
     {
+<<<<<<< HEAD
         return $this->render('daftar');
     }
     public function actionMentor()
     {
+=======
+>>>>>>> origin/prod
         $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -46,6 +49,7 @@ class UserController extends Controller
         ]);
     }
 
+<<<<<<< HEAD
     public function actionAnggota()
     {
         $searchModel = new UserSearch();
@@ -58,6 +62,8 @@ class UserController extends Controller
     }
 
 
+=======
+>>>>>>> origin/prod
     /**
      * Displays a single User model.
      * @param integer $id
@@ -85,7 +91,11 @@ class UserController extends Controller
                     $model->save();
                 }
             }
+<<<<<<< HEAD
          return $this->redirect(['view', 'id' => $model->kehadiran_id]);
+=======
+         return $this->redirect(['/kehadiran', 'id' => $model->kehadiran_id]);
+>>>>>>> origin/prod
         } else {
             return $this->render('view', [
                 'model' => $model,
@@ -101,6 +111,7 @@ class UserController extends Controller
      */
     public function actionCreate()
     {
+<<<<<<< HEAD
         $model =new  User();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() ) {
@@ -128,11 +139,20 @@ class UserController extends Controller
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
+=======
+        $model = new User();
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->render('create', [
+>>>>>>> origin/prod
                 'model' => $model,
             ]);
         }
     }
 
+<<<<<<< HEAD
         public function actionUpdate($id)
     {
         $model = $this->findModel($id);
@@ -163,6 +183,19 @@ class UserController extends Controller
                 $model->password_hash = $model->password_hash; 
             }
                     $model->save();
+=======
+    /**
+     * Updates an existing User model.
+     * If update is successful, the browser will be redirected to the 'view' page.
+     * @param integer $id
+     * @return mixed
+     */
+    public function actionUpdate($id)
+    {
+        $model = $this->findModel($id);
+
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+>>>>>>> origin/prod
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
@@ -172,6 +205,7 @@ class UserController extends Controller
     }
 
     /**
+<<<<<<< HEAD
      * Updates an existing User model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
@@ -191,6 +225,8 @@ class UserController extends Controller
     // }
 
     /**
+=======
+>>>>>>> origin/prod
      * Deletes an existing User model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id

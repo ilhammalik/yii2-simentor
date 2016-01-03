@@ -51,7 +51,10 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return [
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/prod
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
         ];
     }
@@ -82,10 +85,13 @@ class User extends ActiveRecord implements IdentityInterface
     {
         return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
     }
+<<<<<<< HEAD
     public static function findBySat($sat)
     {
         return static::findOne(['status_pengguna' => $sat, 'status' => self::STATUS_ACTIVE]);
     }
+=======
+>>>>>>> origin/prod
 
     /**
      * Finds user by password reset token
